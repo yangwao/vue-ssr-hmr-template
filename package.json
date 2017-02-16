@@ -4,7 +4,7 @@
   "author": "Awe <hilongjw@gmail.com>",
   "scripts": {
     "start": "node app",
-    "dev": "cross-env NODE_ENV=development supervisor -w server,app.js app",
+    "dev": "cross-env NODE_ENV=development supervisor -w server, app",
     "build": "cross-env NODE_ENV=production node build/build-prod",
     "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.js --progress --hide-modules"
   },

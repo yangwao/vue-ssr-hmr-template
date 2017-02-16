@@ -17,14 +17,14 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.vue$/,
-            loader: 'vue'
+            loader: 'vue-loader'
         }, {
             test: /\.js$/,
-            loader: 'babel',
+            loader: 'babel-loader',
             exclude: /node_modules/
         }, {
             test: /\.(png|jpg|gif|svg|ttf|woff|eot)$/,
-            loader: 'file',
+            loader: 'file-loader',
             query: {
                 name: 'file/[name].[ext]'
             }
